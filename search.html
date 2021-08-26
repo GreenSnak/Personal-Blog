@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Blog</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper page">
+    <header class="header">
+      <div class="header__left">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link has-subnav" href="#">Статьи</a>
+
+              <ul class="subnav">
+                <li><a href="#" class="subnav__link">Создание сайтов</a></li>
+                <li><a href="#" class="subnav__link">Интернет-маркетинг</a></li>
+                <li><a href="#" class="subnav__link">Продвижение видео</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./text.html">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./text.html">Реклама</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger" type="button" id="sidebarToggle">
+          <span>Открыть навигацию</span>
+        </button>
+      </div>
+
+      <div class="header__right">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./profile.html">Профиль</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./signin.html">Выйти</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="search" action="./search.html" method="get">
+          <input class="search__input" type="text" placeholder="Поиск по блогу">
+        </form>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__header">
+        <img src="images/sidebar-header.jpg" alt="">
+      </div>
+
+      <div class="sidebar__content">
+        <div class="profile">
+
+          <img class="profile__avatar" src="https://smart-lab.ru/uploads/images/03/37/08/2020/05/27/5c4bcd.jpg" alt="">
+          <!--https://place-hold.it/100-->
+          <div class="profile__header">
+            <div class="profile__name">Николай Петров</div>
+            <div class="profile__prof">Front-end разработчик</div>
+          </div>
+
+          <ul class="social">
+            <li class="social__item"><a href="#" target="_blank" class="social__link"><img
+                  src="images/icons/social/instagram.svg" alt="Николай Петров instagram"></a></li>
+            <li class="social__item"><a href="#" target="_blank" class="social__link"><img
+                  src="images/icons/social/vk.svg" alt="Николай Петров vk"></a></li>
+            <li class="social__item"><a href="#" target="_blank" class="social__link"><img
+                  src="images/icons/social/pinterest.svg" alt="Николай Петров pinterest"></a></li>
+          </ul>
+
+          <div class="profile__text">
+            <p>
+              Front-end разработчик. Практик верстки сайтов.
+              Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в
+              создании сайтов различной сложности.
+            </p>
+          </div>
+        </div>
+        <!-- /.profile -->
+
+        <nav class="nav nav--mobile">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link has-subnav" href="#">Статьи</a>
+
+              <ul class="subnav">
+                <li><a href="#" class="subnav__link">Создание сайтов</a></li>
+                <li><a href="#" class="subnav__link">Интернет-маркетинг</a></li>
+                <li><a href="#" class="subnav__link">Продвижение видео</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./text.html">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./text.html">Реклама</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./profile.html">Профиль</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./signup.html">Выйти</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <!-- /.sidebar__content -->
+      <div class="sidebar__footer">
+        <a class="btn btn--red" href="./works.html">Мои работы</a>
+        <button class="btn btn--blue" type="button" data-modal="contact-modal"> Написать мне</button>
+      </div>
+    </aside>
+    <!-- /.sidebar -->
+
+    <main class="main">
+      <div class="container">
+        <h1 class="page__title">Результаты поиска “Создание сайта”</h1>
+
+        <article class="post">
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="./post.html">Как писать код быстро и безболезненно?</a>
+            </h2>
+            <p class="post__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi facilis odit cumque minus dolorem
+              nemo itaque tempore labore eligendi. Deleniti labore alias ut at enim eveniet necessitatibus ipsam animi!
+            </p>
+          </div>
+
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time datetime="220-06-21 19:20">21.06.2020</time>
+              </li>
+              <li class="post__data-item">
+                <a href="./post.html">создание сайтов</a>
+              </li>
+            </ul>
+
+            <a href="./post.html" class="post__read">перейти</a>
+          </div>
+        </article>
+        <!-- /.post -->
+        <article class="post">
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="./post.html">Купил новый ноутбук за 150 000 руб</a>
+            </h2>
+          </div>
+
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time datetime="220-06-21 19:20">21.06.2020</time>
+              </li>
+              <li class="post__data-item">
+                <a href="#">продвижение видео</a>
+              </li>
+            </ul>
+
+            <a class="post__read" href="./post.html">перейти</a>
+          </div>
+        </article>
+        <!-- /.post -->
+        <article class="post">
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="./post.html">Как я сходил на FrontEnd Conf 2021</a>
+            </h2>
+            <p class="post__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi facilis odit cumque minus dolorem
+              nemo itaque tempore labore eligendi. Deleniti labore alias ut at enim eveniet necessitatibus ipsam animi!
+            </p>
+          </div>
+
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time datetime="220-06-21 19:20">21.06.2020</time>
+              </li>
+              <li class="post__data-item">
+                <a href="#">конференции</a>
+              </li>
+            </ul>
+
+            <a href="./post.html" class="post__read">перейти</a>
+          </div>
+        </article>
+        <!-- /.post -->
+      </div>
+    </main>
+    <!-- /.main -->
+  </div>
+
+
+  <div class="modal" id="contact-modal">
+    <div class="modal__content modal__content--contact">
+      <button class="modal__close" type="button">
+        <img src="images/icons/close.svg" alt="Закрыть">
+      </button>
+
+      <form action="/" class="form" method="POST">
+        <div class="form__group form__group--md">
+          <input type="text" class="form__control" placeholder="Ваше имя" value="Николай Петров">
+          <span class="form__line"></span>
+        </div>
+        <div class="form__group form__group--md">
+          <input type="email" class="form__control" placeholder="Ваш e-mail">
+          <span class="form__line"></span>
+        </div>
+        <div class="form__group form__group--md">
+          <textarea class="form__control form__control--textarea" placeholder="Текст сообщения"
+            data-autoresize=""></textarea>
+          <span class="form__line"></span>
+        </div>
+
+        <div class="form__footer">
+          <div class="form__group form__group--md">
+            <button type="submit" class="btn btn--blue btn--rounded btn--sm">Отправить</button>
+          </div>
+        </div>
+      </form>
+
+      <ul class="modal__footer">
+        <li>e-mail: <a href="mailto:info@mywebsite.ru">info@mywebsite.ru</a></li>
+        <li>тел: <a href="tel:+94323285622">+943-232-856-22</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- ./modal__contact -->
+
+  <!-- JS -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
